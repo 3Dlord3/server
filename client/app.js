@@ -11,7 +11,7 @@ var ws = new WebSocket('ws://192.168.88.236:80');
     field.addEventListener('keydown', function(event) {
       if(event.which == '13') {
         ws.send('Ваня: ' + field.value);
-        field.value = '';
+        field.value = '';//
       }
     })
   }
